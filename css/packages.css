@@ -1,0 +1,189 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* ===== Navbar Styles ===== */
+  .navbar {
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    width: 120px;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover,
+  .navbar .nav-links .active {
+    color: #ff9800;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      background: none;
+      color: white;
+      font-size: 1.5rem;
+      border: none;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
+  /* ===== Packages Page Styles ===== */
+  .packages-page {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .packages-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .packages-page p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filters label {
+    font-size: 1rem;
+  }
+  
+  .filters select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  /* ===== Packages Grid (3 Columns) ===== */
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .package-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .package-card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .package-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .package-card .price {
+    font-size: 1.25rem;
+    color: #0077b6;
+    font-weight: bold;
+  }
+  
+  .package-card .book-now {
+    background-color: #0077b6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .package-card .book-now:hover {
+    background-color: #005f8b;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* ===== Responsiveness: Mobile and Tablet Breakpoints ===== */
+  @media (max-width: 1024px) {
+    .packages-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .packages-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  
+    .packages-page h1 {
+      font-size: 2rem;
+    }
+  
+    .packages-page p {
+      font-size: 1rem;
+    }
+  
+    .filters {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  

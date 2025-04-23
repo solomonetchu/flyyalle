@@ -1,0 +1,261 @@
+/* ===== ABOUT PAGE STYLES ===== */
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(to right, #00c6ff, #0072ff); /* Use a nice gradient */
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Remove the arrow buttons' styling for Hero section */
+.about-hero .prev,
+.about-hero .next {
+  display: none; /* No need to display the arrows anymore */
+}
+
+/* Company Overview Section */
+.company-overview {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.company-overview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.company-overview p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+  padding: 4rem 1rem;
+  background-color: #f4f4f9;
+}
+
+.vision-mission h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.vision-mission p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 1rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.testimonials-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.video-container {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-content h4 {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-content p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 1rem;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #0077b6;
+}
+
+/* Navigation buttons for Testimonials section */
+.testimonials .prev,
+.testimonials .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #333;
+}
+
+.testimonials .prev {
+  left: 10px;
+}
+
+.testimonials .next {
+  right: 10px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .testimonials-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-card {
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+}
+
+/* CTA Section */
+.cta {
+  background-color: #2d89e5;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #2d89e5;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+}

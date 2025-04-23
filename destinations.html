@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations | Globetrek Adventures</title>
+
+  <!-- Linked CSS -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/destinations.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Globetrek Adventures Logo" />
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Destinations Page Hero ===== -->
+  <section class="destinations-hero">
+    <div class="container">
+      <h1>Explore Our Most Popular Travel Destinations</h1>
+      <p>Browse and filter your dream getaway</p>
+      <input type="text" id="filter-input" placeholder="Search destinations..." />
+    </div>
+  </section>
+
+  <!-- ===== Destinations Grid ===== -->
+  <section class="destinations-section">
+    <div class="container">
+      <div class="destinations-grid" id="destinationsGrid">
+        <!-- Destination Card: Paris -->
+        <div class="destination-card" data-modal="modal-paris">
+          <img src="assets/images/Paris.jfif" alt="Paris" />
+          <h4>Paris, France</h4>
+          <p>The city of lights awaits your discovery.</p>
+
+          <!-- ===== User Reviews and Ratings ===== -->
+          <div class="destination-reviews">
+            <h5>Average Rating: ★★★★☆ (4/5)</h5>
+            <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+            <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+          </div>
+
+          <!-- ===== Call-to-Action Button ===== -->
+          <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+          
+          <!-- View More Button (Opens Modal) -->
+          <button class="view-more">View More</button>
+        </div>
+
+        <!-- Destination Card: Bali -->
+        <div class="destination-card" data-modal="modal-bali">
+          <img src="assets/images/Denmark.jpg" alt="Bali" />
+          <h4>Bali, Indonesia</h4>
+          <p>Relax, explore, and soak in the tropical vibes.</p>
+                    <!-- ===== User Reviews and Ratings ===== -->
+                    <div class="destination-reviews">
+                      <h5>Average Rating: ★★★★☆ (4/5)</h5>
+                      <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+                      <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+                    </div>
+          
+                    <!-- ===== Call-to-Action Button ===== -->
+                    <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+                    
+                    <!-- View More Button (Opens Modal) -->
+                    <button class="view-more">View More</button>
+        </div>
+
+        <!-- Destination Card: Kenya -->
+        <div class="destination-card" data-modal="modal-kenya">
+          <img src="assets/images/Dubai.jpg" alt="Kenya" />
+          <h4>Kenya Safari</h4>
+          <p>Experience the wild in its purest form.</p>
+                    <!-- ===== User Reviews and Ratings ===== -->
+                    <div class="destination-reviews">
+                      <h5>Average Rating: ★★★★☆ (4/5)</h5>
+                      <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+                      <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+                    </div>
+          
+                    <!-- ===== Call-to-Action Button ===== -->
+                    <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+                    
+                    <!-- View More Button (Opens Modal) -->
+                    <button class="view-more">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Modals for Destination Details ===== -->
+  <div class="modal" id="modal-paris">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4>Paris, France</h4>
+      <p>The City of Light offers rich history, art, and exquisite cuisine. Stroll along the Seine, explore the Louvre, and indulge in authentic French pastries.</p>
+
+      <!-- User Reviews Section inside Modal -->
+      <div class="destination-reviews">
+        <h5>Average Rating: ★★★★☆ (4/5)</h5>
+        <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+        <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+      </div>
+
+      <!-- Call-to-Action Button inside Modal -->
+      <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-bali">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4>Bali, Indonesia</h4>
+      <p>Relax on stunning beaches, visit ancient temples, and soak in tropical serenity with warm hospitality and natural beauty.</p>
+
+            <!-- User Reviews Section inside Modal -->
+            <div class="destination-reviews">
+              <h5>Average Rating: ★★★★☆ (4/5)</h5>
+              <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+              <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+            </div>
+      
+            <!-- Call-to-Action Button inside Modal -->
+            <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-kenya">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4>Kenya Safari</h4>
+      <p>Witness breathtaking wildlife on the African savannah, embark on a safari adventure, and experience traditional Maasai culture firsthand.</p>
+          <!-- User Reviews Section inside Modal -->
+          <div class="destination-reviews">
+            <h5>Average Rating: ★★★★☆ (4/5)</h5>
+            <p>"The trip was fantastic! Highly recommend Paris for its rich culture and amazing cuisine."</p>
+            <p>"Loved the Eiffel Tower and the Seine River. A great destination for history lovers!"</p>
+          </div>
+    
+          <!-- Call-to-Action Button inside Modal -->
+          <button class="cta-button" onclick="window.location.href='contact.html'">Book Now</button>
+    </div>
+  </div>
+
+
+  <!-- ===== INTERACTIVE PHOTO SLIDESHOW BEFORE FOOTER ===== -->
+<section class="photo-slideshow-section">
+  <div class="container">
+    <h2>Discover More Stunning Locations</h2>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="assets/images/china.jpg" alt="Destination 1" />
+      </div>
+      <div class="slide fade">
+        <img src="assets/images/Denmark.jpg" alt="Destination 2" />
+      </div>
+      <div class="slide fade">
+        <img src="assets/images/Dubai.jpg" alt="Destination 3" />
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Globetrek Adventures. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/global.js"></script>
+  <script src="js/destinations.js"></script>
+</body>
+</html>

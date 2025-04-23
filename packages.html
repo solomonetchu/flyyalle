@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages | Fly Yalle Travel & Tourism</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/packages.css">
+  <script defer src="js/packages.js"></script>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Globetrek Adventures Logo" />
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html" class="active">Packages</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== PACKAGES PAGE ===== -->
+  <section class="packages-page">
+    <div class="container">
+      <h1>Explore Our Travel Packages</h1>
+      <p>Find the perfect travel package for your next adventure. Choose from a wide variety of destinations and experiences tailored to your needs.</p>
+
+      <!-- Filter Section -->
+      <div class="filters">
+        <label for="duration-filter">Duration:</label>
+        <select id="duration-filter">
+          <option value="all">All Durations</option>
+          <option value="short">Short (1-5 Days)</option>
+          <option value="medium">Medium (6-10 Days)</option>
+          <option value="long">Long (10+ Days)</option>
+        </select>
+
+        <label for="price-filter">Price Range:</label>
+        <select id="price-filter">
+          <option value="all">All Prices</option>
+          <option value="low">$0 - $1000</option>
+          <option value="medium">$1001 - $3000</option>
+          <option value="high">$3001+</option>
+        </select>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="packages-grid">
+        <!-- Package 1 -->
+        <div class="package-card">
+          <img src="assets/images/dubai-travel-flyer-t.jpg" alt="Luxury Tour">
+          <h3>Luxury Tour</h3>
+          <p class="price">$2500</p>
+          <p class="duration">7 Days</p>
+          <p class="description">Experience the finest luxury with top-rated hotels, gourmet dining, and private excursions.</p>
+          <button class="book-now">Book Now</button>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+          <img src="assets/images/dubai-visa-design-.jpg" alt="Adventure Package">
+          <h3>Adventure Package</h3>
+          <p class="price">$1800</p>
+          <p class="duration">5 Days</p>
+          <p class="description">For the thrill-seekers. Includes trekking, zip-lining, and guided adventures in nature.</p>
+          <button class="book-now">Book Now</button>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+          <img src="assets/images/DUBAI234.jpg" alt="Family Getaway">
+          <h3>Family Getaway</h3>
+          <p class="price">$1200</p>
+          <p class="duration">4 Days</p>
+          <p class="description">The perfect family vacation with activities for all ages, including theme parks and cultural excursions.</p>
+          <button class="book-now">Book Now</button>
+        </div>
+
+        <!-- More packages can be added here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Fly Yalle Adventures. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="https://img.icons8.com/ios/452/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/global.js"></script>
+  <script src="js/packages.js"></script>
+</body>
+</html>

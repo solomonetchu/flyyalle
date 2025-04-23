@@ -1,0 +1,268 @@
+/* ===== DESTINATIONS HERO SECTION ===== */
+.destinations-hero {
+  background: linear-gradient(135deg, #0077b6, #90e0ef); /* Gradient background */
+  padding: 6rem 1rem;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.destinations-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.destinations-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#filter-input {
+  padding: 0.75rem;
+  width: 90%;
+  max-width: 400px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* ===== DESTINATIONS GRID ===== */
+.destinations-section {
+  padding: 4rem 1rem;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.destination-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.destination-card h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.destination-card p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.destination-card .view-more {
+  margin: 0 0 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #2d89e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.destination-card .view-more:hover {
+  background-color: #1c6cd2;
+}
+
+.destination-card .cta-button {
+  margin: 0 0 1.2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6f61; /* Unique color for CTA */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.destination-card .cta-button:hover {
+  background-color: #e05b4b; /* Darker shade for hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== MODAL STYLES ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal.show {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.modal .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #000;
+}
+
+/* ===== Book Now Button Inside Modal ===== */
+.modal-content .cta-button {
+  margin: 1rem 0 0;
+  padding: 1rem 2rem;
+  background-color: #28a745; /* Green color for CTA inside modal */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content .cta-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* ===== PHOTO SLIDESHOW SECTION BEFORE FOOTER ===== */
+.photo-slideshow-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.photo-slideshow-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 400px; /* Adjust height for larger images */
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ===== FADE ANIMATION FOR SLIDESHOW ===== */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 600px) {
+  .destinations-hero h1 {
+    font-size: 2rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .destination-card p {
+    font-size: 0.9rem;
+  }
+
+  .destination-card .view-more {
+    padding: 0.4rem 0.75rem;
+  }
+
+  .destination-card .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-content .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
