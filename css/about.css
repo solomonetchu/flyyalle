@@ -1,8 +1,6 @@
-/* ===== ABOUT PAGE STYLES ===== */
-
 /* Hero Section */
 .about-hero {
-  background: linear-gradient(to right, #00c6ff, #0072ff); /* Use a nice gradient */
+  background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
   padding: 5rem 1rem;
   text-align: center;
@@ -16,12 +14,6 @@
 .about-hero p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-}
-
-/* Remove the arrow buttons' styling for Hero section */
-.about-hero .prev,
-.about-hero .next {
-  display: none; /* No need to display the arrows anymore */
 }
 
 /* Company Overview Section */
@@ -104,6 +96,7 @@
   margin: 0 auto;
 }
 
+
 /* Testimonials Section */
 .testimonials {
   padding: 4rem 1rem;
@@ -143,6 +136,8 @@
   transform: translateY(-10px);
 }
 
+
+
 .video-container {
   width: 100%;
   height: 180px;
@@ -173,21 +168,10 @@ video {
   color: #555;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-  padding: 1rem;
-  transition: color 0.3s ease;
-}
-
 button:hover {
   color: #0077b6;
 }
 
-/* Navigation buttons for Testimonials section */
 .testimonials .prev,
 .testimonials .next {
   position: absolute;
@@ -205,19 +189,9 @@ button:hover {
   right: 10px;
 }
 
-/* RESPONSIVENESS */
-@media (max-width: 768px) {
-  .testimonials-slider {
-    flex-direction: column;
-    align-items: center;
-  }
-  .testimonial-card {
-    margin-bottom: 1rem;
-    width: 80%;
-  }
-}
 
-/* CTA Section */
+
+* CTA Section */
 .cta {
   background-color: #2d89e5;
   color: white;
@@ -244,6 +218,32 @@ button:hover {
   text-decoration: none;
 }
 
+.submit-btn {
+  background-color: #2d89e5;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .testimonials-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+}
+
+
 /* Footer Styles */
 .footer {
   background-color: #333;
@@ -258,4 +258,39 @@ button:hover {
 
 .social-links a {
   margin: 0 0.5rem;
+}
+
+/* Hamburger Menu Fix */
+#menu-toggle {
+  display: none;
+}
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1001;
+  position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex !important;
+  }
 }

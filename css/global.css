@@ -50,7 +50,7 @@ a {
 }
 
 /* Hamburger Toggle Button */
-.menu-toggle {
+#hamburger-btn {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -62,7 +62,7 @@ a {
   z-index: 1001;
 }
 
-.menu-toggle span {
+#hamburger-btn span {
   height: 4px;
   width: 100%;
   background-color: #008080;
@@ -70,43 +70,43 @@ a {
   transition: all 0.3s ease;
 }
 
-/* Toggle animation */
-.menu-toggle.active span:nth-child(1) {
+#hamburger-btn.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menu-toggle.active span:nth-child(2) {
+#hamburger-btn.active span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-toggle.active span:nth-child(3) {
+#hamburger-btn.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.nav-links {
+/* Navigation Links */
+#nav-links {
   display: flex;
   gap: 1.5rem;
 }
 
-.nav-links a {
+#nav-links a {
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+#nav-links a:hover,
+#nav-links a.active {
   color: #008080;
   border-bottom: 2px solid #008080;
 }
 
-/* Responsive Nav */
+/* Responsive Navigation */
 @media (max-width: 768px) {
-  .menu-toggle {
+  #hamburger-btn {
     display: flex;
   }
 
-  .nav-links {
+  #nav-links {
     display: none;
     flex-direction: column;
     gap: 1rem;
@@ -118,9 +118,10 @@ a {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .nav-links.show {
+  #nav-links.show {
     display: flex;
   }
 }
@@ -133,7 +134,7 @@ section h3 {
   color: #008080;
 }
 
-/* ===== Reusable Grid/Card ===== */
+/* ===== Grid / Card Layouts ===== */
 .features-grid,
 .destinations-grid {
   display: grid;
@@ -176,7 +177,7 @@ section h3 {
   padding-right: 0.5rem;
 }
 
-/* ===== Button Styles ===== */
+/* ===== Buttons ===== */
 .btn-primary {
   background-color: #008080;
   color: #fff;
@@ -215,4 +216,3 @@ section h3 {
 .social-links img:hover {
   transform: scale(1.1);
 }
-
