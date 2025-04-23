@@ -34,3 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
     grid.appendChild(card);
   };
 });
+
+
+// === Hamburger Menu Toggle ===
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburgerBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
+
